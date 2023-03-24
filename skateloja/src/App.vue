@@ -37,8 +37,8 @@ export default {
   }
 
   .main-container {
-    margin: 15px;
-    min-height: 300px;
+    margin: 20px;
+    min-height: 600px;
   }
 
   h1 {

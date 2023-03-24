@@ -1,119 +1,223 @@
 {
-    "skates": {
-      "trucks": [
-        {
-          "id": 1,
-          "tipo": "Independent"
-        },
-        {
-          "id": 2,
-          "tipo": "Venture"
-        },
-        {
-          "id": 3,
-          "tipo": "Krux"
-        },
-        {
-          "id": 4,
-          "tipo": "Crail"
-        }
-      ],
-      "shapes": [
-        {
-          "id": 1,
-          "tipo": "Zorlak"
-        },
-        {
-          "id": 2,
-          "tipo": "Plan B - Felipe G"
-        },
-        {
-          "id": 3,
-          "tipo": "Primitive"
-        },
-        {
-          "id": 4,
-          "tipo": "Kronik Lehi"
-        }
-      ],
-      "rodas": [
-          {
-            "id": 1,
-            "tipo": "Moska"
-          },
-          {
-            "id": 2,
-            "tipo": "Element"
-          },
-          {
-            "id": 3,
-            "tipo": "Bonnes"
-          },
-          {
-            "id": 4,
-            "tipo": "Spitfire"
-          }
-        ],
-      "rolamentos": [
-        {
-          "id": 1,
-          "tipo": "NMB"
-        },
-        {
-          "id": 2,
-          "tipo": "Abec 30"
-        },
-        {
-          "id": 3,
-          "tipo": "Swiss Bonnes"
-        },
-        {
-          "id": 4,
-          "tipo": "Andale"
-        },
-        {
-          "id": 5,
-          "tipo": "Bilha"
-        }
-      ],
-      "opcionais": [
-          {
-            "id": 1,
-            "tipo": "Silver tape"
-          },
-          {
-            "id": 2,
-            "tipo": "Super bonder"
-          },
-          {
-            "id": 3,
-            "tipo": "Seda"
-          },
-          {
-            "id": 4,
-            "tipo": "Roupa"
-          },
-          {
-            "id": 5,
-            "tipo": "Corote"
-          }
-        ]
-    },
-    "status": [
+  "skates": {
+    "trucks": [
       {
         "id": 1,
-        "tipo": "Solicitado"
+        "tipo": "Independent"
       },
       {
         "id": 2,
-        "tipo": "Em produção"
+        "tipo": "Venture"
       },
       {
         "id": 3,
-        "tipo": "Finalizado"
+        "tipo": "Krux"
+      },
+      {
+        "id": 4,
+        "tipo": "Crail"
       }
     ],
-    "pedidos": []
-  }
-  
-  
+    "shapes": [
+      {
+        "id": 1,
+        "tipo": "Zorlak"
+      },
+      {
+        "id": 2,
+        "tipo": "Plan B - Felipe G"
+      },
+      {
+        "id": 3,
+        "tipo": "Primitive"
+      },
+      {
+        "id": 4,
+        "tipo": "Kronik Lehi"
+      },
+      {
+        "id": 5,
+        "tipo": "Shape BANK$LIFE"
+      }
+    ],
+    "rodas": [
+      {
+        "id": 1,
+        "tipo": "Moska"
+      },
+      {
+        "id": 2,
+        "tipo": "Element"
+      },
+      {
+        "id": 3,
+        "tipo": "Bonnes"
+      },
+      {
+        "id": 4,
+        "tipo": "Spitfire"
+      }
+    ],
+    "rolamentos": [
+      {
+        "id": 1,
+        "tipo": "NMB"
+      },
+      {
+        "id": 2,
+        "tipo": "Abec 30"
+      },
+      {
+        "id": 3,
+        "tipo": "Swiss Bonnes"
+      },
+      {
+        "id": 4,
+        "tipo": "Andale"
+      },
+      {
+        "id": 5,
+        "tipo": "Bilha"
+      }
+    ],
+    "opcionais": [
+      {
+        "id": 1,
+        "tipo": "Silver tape"
+      },
+      {
+        "id": 2,
+        "tipo": "Super bonder"
+      },
+      {
+        "id": 3,
+        "tipo": "Seda"
+      },
+      {
+        "id": 4,
+        "tipo": "Roupa"
+      },
+      {
+        "id": 5,
+        "tipo": "Corote"
+      }
+    ]
+  },
+  "status": [
+    {
+      "id": 1,
+      "tipo": "Solicitado"
+    },
+    {
+      "id": 2,
+      "tipo": "Em produção"
+    },
+    {
+      "id": 3,
+      "tipo": "Finalizado"
+    }
+  ],
+  "pedidos": [
+    {
+      "nome": "Felipe",
+      "shape": "Kronik Lehi",
+      "truck": "Independent",
+      "roda": "Element",
+      "rolamento": "Swiss Bonnes",
+      "opcionais": [
+        "Seda",
+        "Roupa"
+      ],
+      "status": "Solicitado",
+      "id": 1
+    },
+    {
+      "nome": "Henrique",
+      "shape": "Zorlak",
+      "truck": "Crail",
+      "roda": "Moska",
+      "rolamento": "NMB",
+      "opcionais": [
+        "Seda",
+        "Corote"
+      ],
+      "status": "Solicitado",
+      "id": 2
+    },
+    {
+      "nome": "Milano",
+      "shape": "Plan B - Felipe G",
+      "truck": "Venture",
+      "roda": "Bonnes",
+      "rolamento": "Andale",
+      "opcionais": [
+        "Silver tape",
+        "Super bonder",
+        "Roupa"
+      ],
+      "status": "Solicitado",
+      "id": 3
+    },
+    {
+      "nome": "João",
+      "shape": "Plan B - Felipe G",
+      "truck": "Krux",
+      "roda": "Spitfire",
+      "rolamento": "NMB",
+      "opcionais": [],
+      "status": "Solicitado",
+      "id": 4
+    },
+    {
+      "nome": "Cezar",
+      "shape": "Primitive",
+      "truck": "Crail",
+      "roda": "Spitfire",
+      "rolamento": "Abec 30",
+      "opcionais": [
+        "Roupa",
+        "Seda"
+      ],
+      "status": "Solicitado",
+      "id": 5
+    },
+    {
+      "nome": "Boi",
+      "shape": "Zorlak",
+      "truck": "Krux",
+      "roda": "Moska",
+      "rolamento": "Abec 30",
+      "opcionais": [
+        "Silver tape"
+      ],
+      "status": "Solicitado",
+      "id": 6
+    },
+    {
+      "nome": "caue",
+      "shape": "Zorlak",
+      "truck": "Crail",
+      "roda": "Moska",
+      "rolamento": "Abec 30",
+      "opcionais": [
+        "Seda",
+        "Corote"
+      ],
+      "status": "Solicitado",
+      "id": 7
+    },
+    {
+      "nome": null,
+      "shape": "Primitive",
+      "truck": "Krux",
+      "roda": "Element",
+      "rolamento": "Abec 30",
+      "opcionais": [
+        "Seda",
+        "Roupa"
+      ],
+      "status": "Solicitado",
+      "id": 8
+    }
+  ]
+}

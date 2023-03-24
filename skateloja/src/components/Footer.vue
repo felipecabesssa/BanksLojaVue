@@ -1,6 +1,6 @@
 <template>
     <div id="footer">
-        <p>Monte seu Skate &copy; 2023</p>
+        <p>dev cabesssa &copy; 2023</p>
     </div>
 </template>
 
@@ -12,7 +12,7 @@ export default {
 
 <style scoped>
     #footer {
-        height: 80px;
+        height: 40px;
         background-color: #222;
         border-top: 2px solid #111;
         color: #FCBA03;
