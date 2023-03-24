@@ -4,6 +4,10 @@
 ```
 npm install
 ```
+## Correção erro multiword/eslint
+```
+npm remove @vue/cli-plugin-eslint
+```
 
 ### Compiles and hot-reloads for development
 ```
