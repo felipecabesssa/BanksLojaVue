@@ -1,0 +1,119 @@
+{
+    "skates": {
+      "trucks": [
+        {
+          "id": 1,
+          "tipo": "Independent"
+        },
+        {
+          "id": 2,
+          "tipo": "Venture"
+        },
+        {
+          "id": 3,
+          "tipo": "Krux"
+        },
+        {
+          "id": 4,
+          "tipo": "Crail"
+        }
+      ],
+      "shapes": [
+        {
+          "id": 1,
+          "tipo": "Zorlak"
+        },
+        {
+          "id": 2,
+          "tipo": "Plan B - Felipe G"
+        },
+        {
+          "id": 3,
+          "tipo": "Primitive"
+        },
+        {
+          "id": 4,
+          "tipo": "Kronik Lehi"
+        }
+      ],
+      "rodas": [
+          {
+            "id": 1,
+            "tipo": "Moska"
+          },
+          {
+            "id": 2,
+            "tipo": "Element"
+          },
+          {
+            "id": 3,
+            "tipo": "Bonnes"
+          },
+          {
+            "id": 4,
+            "tipo": "Spitfire"
+          }
+        ],
+      "rolamentos": [
+        {
+          "id": 1,
+          "tipo": "NMB"
+        },
+        {
+          "id": 2,
+          "tipo": "Abec 30"
+        },
+        {
+          "id": 3,
+          "tipo": "Swiss Bonnes"
+        },
+        {
+          "id": 4,
+          "tipo": "Andale"
+        },
+        {
+          "id": 5,
+          "tipo": "Bilha"
+        }
+      ],
+      "opcionais": [
+          {
+            "id": 1,
+            "tipo": "Silver tape"
+          },
+          {
+            "id": 2,
+            "tipo": "Super bonder"
+          },
+          {
+            "id": 3,
+            "tipo": "Seda"
+          },
+          {
+            "id": 4,
+            "tipo": "Roupa"
+          },
+          {
+            "id": 5,
+            "tipo": "Corote"
+          }
+        ]
+    },
+    "status": [
+      {
+        "id": 1,
+        "tipo": "Solicitado"
+      },
+      {
+        "id": 2,
+        "tipo": "Em produção"
+      },
+      {
+        "id": 3,
+        "tipo": "Finalizado"
+      }
+    ],
+    "pedidos": []
+  }
+  
+  
