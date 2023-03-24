@@ -4,7 +4,7 @@
 ```
 npm install
 ```
-## Correção erro multiword/eslint
+### Correção erro multiword/eslint
 ```
 npm remove @vue/cli-plugin-eslint
 ```
@@ -12,6 +12,10 @@ npm remove @vue/cli-plugin-eslint
 ### Compiles and hot-reloads for development
 ```
 npm run serve
+```
+### Api backend
+```
+npm run backend
 ```
 
 ### Compiles and minifies for production

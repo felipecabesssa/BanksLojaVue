@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <h1>oi</h1>
+    <div id="footer">
+        <p>Monte seu Skate &copy; 2023</p>
     </div>
 </template>
 
@@ -11,5 +11,14 @@ export default {
 </script>
 
 <style scoped>
-
+    #footer {
+        height: 80px;
+        background-color: #222;
+        border-top: 2px solid #111;
+        color: #FCBA03;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
 </style>
