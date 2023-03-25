@@ -132,7 +132,7 @@
         "Seda",
         "Roupa"
       ],
-      "status": "Solicitado",
+      "status": "Finalizado",
       "id": 1
     },
     {
@@ -146,7 +146,7 @@
         "Super bonder",
         "Roupa"
       ],
-      "status": "Solicitado",
+      "status": "Em separação",
       "id": 3
     },
     {
@@ -161,34 +161,6 @@
       ],
       "status": "Em transporte",
       "id": 5
-    },
-    {
-      "nome": "Boi",
-      "shape": "Zorlak",
-      "truck": "Krux",
-      "roda": "Moska",
-      "rolamento": "Abec 30",
-      "opcionais": [
-        "Silver tape"
-      ],
-      "status": "Em separação",
-      "id": 6
-    },
-    {
-      "nome": "Skate ninja",
-      "shape": "Zorlak",
-      "truck": "Indy",
-      "roda": "Bonnes",
-      "rolamento": "NMB",
-      "opcionais": [
-        "Seda",
-        "Corote",
-        "Roupa",
-        "Super bonder",
-        "Silver tape"
-      ],
-      "status": "Solicitado",
-      "id": 10
     },
     {
       "nome": "Vespa",

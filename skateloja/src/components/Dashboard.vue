@@ -1,5 +1,6 @@
 <template>
     <div id="skate-table">
+        <Message :msg="msg" v-show="msg" />
         <div>
             <div id="skate-table-heading">
                 <div>Cliente: </div>
@@ -41,13 +42,16 @@
 </template>
 
 <script>
+import Message from './Message.vue';
 export default {
+  components: { Message },
     name: "Dashboard",
     data() {
         return {
             pedidos: null,
             skate_id: null,
-            status: []
+            status: [],
+            msg: null
         }
     },
     methods: {
@@ -82,7 +86,11 @@ export default {
 
             const response = await request.json();
 
-            //msg
+            // colocar msg de sistema
+            this.msg = `Pedido removido com sucesso`;
+
+            //limpar msg
+            setTimeout(() => this.msg = "",  3000);
 
             this.getPedidos();
 
@@ -99,7 +107,13 @@ export default {
                 body: dataJson
             });
 
-            const response = await req.json();
+            const response = await request.json();
+
+            // colocar msg de sistema
+            this.msg = `Pedido Nº ${response.id} foi atualizado para ${response.status}`;
+
+            //limpar msg
+            setTimeout(() => this.msg = "",  3000);
 
             console.log(response);
 
