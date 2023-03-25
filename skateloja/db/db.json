@@ -159,7 +159,7 @@
         "Roupa",
         "Seda"
       ],
-      "status": "Solicitado",
+      "status": "Em transporte",
       "id": 5
     },
     {
@@ -171,7 +171,7 @@
       "opcionais": [
         "Silver tape"
       ],
-      "status": "Solicitado",
+      "status": "Em separação",
       "id": 6
     },
     {
@@ -203,7 +203,7 @@
         "Super bonder",
         "Roupa"
       ],
-      "status": "Solicitado",
+      "status": "Finalizado",
       "id": 11
     }
   ]

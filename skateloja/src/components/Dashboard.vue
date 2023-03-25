@@ -27,9 +27,9 @@
                     </ul>
                 </div>
                 <div>
-                    <select name="status" class="status">
+                    <select name="status" class="status" @change="updateStatusPedido($event, pedido.id)">
                         <option value="">Status</option>
-                        <option v-for="s in status" :key="s.id" value="s.tipo" :selected="pedido.status == s.tipo">
+                        <option v-for="s in status" :key="s.id" :value="s.tipo" :selected="pedido.status == s.tipo">
                             {{ s.tipo }}
                         </option>
                     </select>
@@ -85,6 +85,23 @@ export default {
             //msg
 
             this.getPedidos();
+
+        },
+        async updateStatusPedido(event, id) {
+
+            const option = event.target.value;
+
+            const dataJson = JSON.stringify({ status: option });
+
+            const request = await fetch(`http://localhost:3000/pedidos/${id}`, {
+                method: "PATCH",
+                headers: { "Content-Type": "application/json" },
+                body: dataJson
+            });
+
+            const response = await req.json();
+
+            console.log(response);
 
         }
     },
