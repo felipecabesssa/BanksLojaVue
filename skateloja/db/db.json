@@ -3,7 +3,7 @@
     "trucks": [
       {
         "id": 1,
-        "tipo": "Independent"
+        "tipo": "Indy"
       },
       {
         "id": 2,
@@ -110,10 +110,14 @@
     },
     {
       "id": 2,
-      "tipo": "Em produção"
+      "tipo": "Em separação"
     },
     {
       "id": 3,
+      "tipo": "Em transporte"
+    },
+    {
+      "id": 4,
       "tipo": "Finalizado"
     }
   ],
@@ -121,7 +125,7 @@
     {
       "nome": "Felipe",
       "shape": "Kronik Lehi",
-      "truck": "Independent",
+      "truck": "Indy",
       "roda": "Element",
       "rolamento": "Swiss Bonnes",
       "opcionais": [
@@ -141,7 +145,7 @@
         "Seda",
         "Corote"
       ],
-      "status": "Solicitado",
+      "status": "Em separação",
       "id": 2
     },
     {
@@ -231,6 +235,22 @@
       ],
       "status": "Solicitado",
       "id": 9
+    },
+    {
+      "nome": "Skate ninja",
+      "shape": "Zorlak",
+      "truck": "Indy",
+      "roda": "Bonnes",
+      "rolamento": "NMB",
+      "opcionais": [
+        "Seda",
+        "Corote",
+        "Roupa",
+        "Super bonder",
+        "Silver tape"
+      ],
+      "status": "Solicitado",
+      "id": 10
     }
   ]
 }

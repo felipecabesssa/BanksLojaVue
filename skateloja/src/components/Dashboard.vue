@@ -13,41 +13,25 @@
         </div>
 
         <div id="skate-table-rows">
-            <div class="skate-table-row">
-                <div>Jõao</div>
-                <div>Plan B</div>
-                <div>Indy</div>
-                <div>Moska</div>
-                <div>NMB</div>
+            <div class="skate-table-row" v-for="pedido in pedidos" :key="pedido.id" >
+                <div>{{ pedido.nome }}</div>
+                <div>{{ pedido.shape }}</div>
+                <div>{{ pedido.truck }}</div>
+                <div>{{ pedido.roda }}</div>
+                <div>{{ pedido.rolamento }}</div>
                 <div>
                     <ul>
-                        <li>Roupas</li>
-                        <li>Seda</li>
+                        <li v-for="(opcional, index) in pedido.opcionais" :key="index">
+                            {{ opcional }}
+                        </li>
                     </ul>
                 </div>
                 <div>
                     <select name="status" class="status">
                         <option value="">Status</option>
-                    </select>
-                    <button class="delete-btn">Cancelar</button>
-                </div>
-            </div>
-
-            <div class="skate-table-row">
-                <div>Jõao</div>
-                <div>Plan B</div>
-                <div>Indy</div>
-                <div>Moska</div>
-                <div>NMB</div>
-                <div>
-                    <ul>
-                        <li>Roupas</li>
-                        <li>Seda</li>
-                    </ul>
-                </div>
-                <div>
-                    <select name="status" class="status">
-                        <option value="">Status</option>
+                        <option v-for="s in status" :key="s.id" value="s.tipo" :selected="pedido.status == s.tipo">
+                            {{ s.tipo }}
+                        </option>
                     </select>
                     <button class="delete-btn">Cancelar</button>
                 </div>
@@ -58,7 +42,42 @@
 
 <script>
 export default {
-    name: "Dashboard"    
+    name: "Dashboard",
+    data() {
+        return {
+            pedidos: null,
+            skate_id: null,
+            status: []
+        }
+    },
+    methods: {
+        async getPedidos() {
+
+            const request = await fetch("http://localhost:3000/pedidos");
+
+            const data = await request.json();
+
+            this.pedidos = data;
+
+            console.log(this.pedidos);
+
+            //resgatar os status
+            this.getStatus();
+
+        },
+        async getStatus() {
+
+            const request = await fetch("http://localhost:3000/status");
+
+            const data = await request.json();
+
+            this.status = data;
+
+        }
+    },
+    mounted() {
+        this.getPedidos();
+    }
 }
 </script>
 
@@ -108,6 +127,7 @@ export default {
         margin-right: 5px;
     }
     .delete-btn {
+        width: 80px;
         background-color: #222;
         color: #FCBA03;
         font-weight: bold;
