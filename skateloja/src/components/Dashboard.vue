@@ -33,7 +33,7 @@
                             {{ s.tipo }}
                         </option>
                     </select>
-                    <button class="delete-btn">Cancelar</button>
+                    <button class="delete-btn" @click="deletePedido(pedido.id)">Cancelar</button>
                 </div>
             </div>
         </div>
@@ -72,6 +72,19 @@ export default {
             const data = await request.json();
 
             this.status = data;
+
+        },
+        async deletePedido(id) {
+
+            const request = await fetch(`http://localhost:3000/pedidos/${id}`, { 
+                method: "DELETE"
+            });
+
+            const response = await request.json();
+
+            //msg
+
+            this.getPedidos();
 
         }
     },

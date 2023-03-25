@@ -136,19 +136,6 @@
       "id": 1
     },
     {
-      "nome": "Henrique",
-      "shape": "Zorlak",
-      "truck": "Crail",
-      "roda": "Moska",
-      "rolamento": "NMB",
-      "opcionais": [
-        "Seda",
-        "Corote"
-      ],
-      "status": "Em separação",
-      "id": 2
-    },
-    {
       "nome": "Milano",
       "shape": "Plan B - Felipe G",
       "truck": "Venture",
@@ -161,16 +148,6 @@
       ],
       "status": "Solicitado",
       "id": 3
-    },
-    {
-      "nome": "João",
-      "shape": "Plan B - Felipe G",
-      "truck": "Krux",
-      "roda": "Spitfire",
-      "rolamento": "NMB",
-      "opcionais": [],
-      "status": "Solicitado",
-      "id": 4
     },
     {
       "nome": "Cezar",
@@ -198,45 +175,6 @@
       "id": 6
     },
     {
-      "nome": "caue",
-      "shape": "Zorlak",
-      "truck": "Crail",
-      "roda": "Moska",
-      "rolamento": "Abec 30",
-      "opcionais": [
-        "Seda",
-        "Corote"
-      ],
-      "status": "Solicitado",
-      "id": 7
-    },
-    {
-      "nome": null,
-      "shape": "Primitive",
-      "truck": "Krux",
-      "roda": "Element",
-      "rolamento": "Abec 30",
-      "opcionais": [
-        "Seda",
-        "Roupa"
-      ],
-      "status": "Solicitado",
-      "id": 8
-    },
-    {
-      "nome": null,
-      "shape": "Kronik Lehi",
-      "truck": "Krux",
-      "roda": "Moska",
-      "rolamento": "Abec 30",
-      "opcionais": [
-        "Silver tape",
-        "Roupa"
-      ],
-      "status": "Solicitado",
-      "id": 9
-    },
-    {
       "nome": "Skate ninja",
       "shape": "Zorlak",
       "truck": "Indy",
@@ -251,6 +189,22 @@
       ],
       "status": "Solicitado",
       "id": 10
+    },
+    {
+      "nome": "Vespa",
+      "shape": "Shape BANK$LIFE",
+      "truck": "Crail",
+      "roda": "Element",
+      "rolamento": "Bilha",
+      "opcionais": [
+        "Silver tape",
+        "Seda",
+        "Corote",
+        "Super bonder",
+        "Roupa"
+      ],
+      "status": "Solicitado",
+      "id": 11
     }
   ]
 }
