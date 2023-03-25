@@ -218,6 +218,19 @@
       ],
       "status": "Solicitado",
       "id": 8
+    },
+    {
+      "nome": null,
+      "shape": "Kronik Lehi",
+      "truck": "Krux",
+      "roda": "Moska",
+      "rolamento": "Abec 30",
+      "opcionais": [
+        "Silver tape",
+        "Roupa"
+      ],
+      "status": "Solicitado",
+      "id": 9
     }
   ]
 }
